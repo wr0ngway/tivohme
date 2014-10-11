@@ -24,7 +24,7 @@ module TivoHME
         @uuid = SecureRandom.uuid
         @url = "/#{name}/"
         @icon_url = "/#{name}/icon.png"
-        @content_type = TivoHME::Constants::HME_MIME
+        @content_type = TivoHMO::Constants::HME_MIME
         @genres = ['other']
       end
 
