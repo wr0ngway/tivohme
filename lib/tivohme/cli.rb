@@ -17,7 +17,9 @@ module TivoHME
 
     option ["-p", "--port"],
            "PORT", "run server using PORT\n",
-           :default => 9142
+           :default => 9142 do |s|
+      Integer(s)
+    end
 
     option ["-s", "--samples"],
            :flag, "run all the sample applications\n",
